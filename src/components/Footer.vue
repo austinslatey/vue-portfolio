@@ -6,7 +6,6 @@
           <img src="../assets/logo3Draft.jpg" alt="Logo" class="h-10" />
         </router-link>
         <div class="ml-4">
-          <p class="text-lg font-medium">Wealthy Mind</p>
           <div class="flex mt-2">
             <a href="#" class="mr-2"><i class="fab fa-facebook fa-lg">LinkTree</i></a>
             <a href="#" class="mr-2"><i class="fab fa-github fa-lg">Github</i></a>

@@ -22,7 +22,6 @@
             "
             >
             <img class="w-12" src="../assets/logo3Draft.jpg"/>
-            <span>Wealthy Mind</span>
             </router-link>
 
             <!-- Mobile menu button -->

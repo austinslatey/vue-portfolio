@@ -3,7 +3,9 @@ import "./style.css";
 import App from "./App.vue";
 import router from "./router";
 import NavBar from "./components/NavBar.vue";
-import TheFooter from './components/Footer.vue';
+import Skills from "./components/Skills.vue";
+import Footer from './components/Footer.vue';
+
 
 
 // Define app and use router
@@ -14,6 +16,7 @@ app.use(router);
 
 // Register Components
 app.component("NavBar", NavBar);
-app.component("TheFooter", TheFooter);
+app.component("Skills", Skills)
+app.component("TheFooter", Footer);
 
 app.mount("#app");
