@@ -5,7 +5,7 @@ import javaScript from '../img/javaScript.png';
 import html from '../img/html.png';
 import command from '../img/command.png';
 import css from '../img/css.png';
-import css1 from '../img/css1.png';
+import css2 from '../img/cc2.png';
 
 // image data to render on certificates page
 
@@ -38,7 +38,7 @@ const certificateData = [
     {
       id: 6,
       image: command,
-      link: 'https://www.codecademy.com/profiles/austinslatey/certificates/learn-the-command-line'
+      link: 'https://www.codecademy.com/profiles/austinslatey/certificates/c87ba0541f8be78bc2f4ba1128233f6f'
     },
     {
       id: 7,
@@ -47,7 +47,7 @@ const certificateData = [
     },
     {
         id: 8,
-        image: css1,
+        image: css2,
         link: 'https://www.codecademy.com/profiles/austinslatey/certificates/9a5bb1fc45b4281af1fffec93b0aaf05'
       },
   ];
