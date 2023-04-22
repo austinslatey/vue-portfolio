@@ -6,6 +6,7 @@ import travelBug from '../projectImgs/travelBug.png';
 import recipEase from '../projectImgs/recipEase.png';
 import jamming from '../projectImgs/jamming.png';
 import catWorx from '../projectImgs/catWorx.png';
+import wealthyMind from '../projectImgs/wealthy-mind.png';
 
 
 
@@ -33,24 +34,24 @@ const projectsData = [
     },
     {
         id: 4,
-        title: 'ConcertScout',
-        description: 'A concert and music festival discovery app built with HTML, CSS, JavaScript, & Third Party APIs',
-        image: concertScout,
-        link: 'https://austinslatey.github.io/concert-scout/'
+        title: 'WealthyMind',
+        description: 'A Ecommerce Website using Vue, Three.js, and PostgreSQL',
+        image: wealthyMind,
+        link: 'https://wealthy-mind.netlify.app'
     },
     {
         id: 5,
-        title: 'TravelBug',
-        description: 'A travel journal app built with React, Node.js, and MongoDB',
-        image: travelBug,
-        link: 'https://github.com/Metelak/Travel-bug'
-    },
-    {
-        id: 6,
         title: 'RecipEase',
         description: 'A recipe sharing app built with React, Node.js, and PostgreSQL',
         image: recipEase,
         link: 'https://github.com/austinslatey/RecipEase'
+    },
+    {
+        id: 6,
+        title: 'TravelBug',
+        description: 'A travel journal app built with React, Node.js, and MongoDB',
+        image: travelBug,
+        link: 'https://github.com/Metelak/Travel-bug'
     },
     {
         id: 7,
@@ -61,11 +62,19 @@ const projectsData = [
     },
     {
         id: 8,
+        title: 'ConcertScout',
+        description: 'A concert and music festival discovery app built with HTML, CSS, JavaScript, & Third Party APIs',
+        image: concertScout,
+        link: 'https://austinslatey.github.io/concert-scout/'
+    },
+    {
+        id: 9,
         title: 'CatWorx',
         description: 'A cat-themed security company website built with C#',
         image: catWorx,
         link: 'https://github.com/austinslatey/Catwork-Security'
     },
+    
 
 ];
 

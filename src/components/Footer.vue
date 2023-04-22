@@ -7,7 +7,9 @@
         </router-link>
         <div class="ml-4">
           <div class="flex mt-2">
-            <a href="#" class="mr-2"><i class="fab fa-facebook fa-lg">LinkTree</i></a>
+            <a href="https://linktr.ee/austinslatey">
+              <img src="@/assets/icons/linktree.svg" alt="Linktree Icon" width="50" height="50">
+            </a>
             <a href="#" class="mr-2"><i class="fab fa-github fa-lg">Github</i></a>
             <a href="#"><i class="fab fa-mail fa-lg">Email</i></a>
           </div>
@@ -35,4 +37,5 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-}</style>
+}
+</style>

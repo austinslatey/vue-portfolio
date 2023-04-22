@@ -1,5 +1,25 @@
 const skills = [
     {
+        name: "Vite",
+        url: "https://vitejs.dev/"
+    },
+    {
+        name: "Three.js",
+        url: "https://threejs.org/docs/"
+    },
+    {
+        name: "Vue.js",
+        url: "https://vuejs.org/v2/guide/"
+    },
+    {
+        name: "Tailwind CSS",
+        url: "https://tailwindcss.com/docs"
+    },
+    {
+        name: "Git Bash",
+        url: "https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line"
+    },
+    {
         name: "HTML5",
         url: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
     },
@@ -12,28 +32,49 @@ const skills = [
         url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
     {
-        name: "React.js & State",
+        name: "3rd Party Web APIs",
+        url: "https://developer.mozilla.org/en-US/docs/Web/API"
+    },
+
+    {
+        name: "React.js",
         url: "https://reactjs.org/"
     },
     {
-        name: "C#",
-        url: "https://docs.microsoft.com/en-us/dotnet/csharp/"
+        name: "Express.js",
+        url: "https://expressjs.com/"
     },
     {
-        name: "Python",
-        url: "https://www.python.org/"
+        name: "Server Side APIs",
+        url: "https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Introduction"
     },
     {
-        name: "SQL",
-        url: "https://developer.mozilla.org/en-US/docs/Glossary/SQL"
-    },
-    {
-        name: "Sequelize",
-        url: "https://sequelize.org/"
+        name: "Apollo Server",
+        url: "https://www.apollographql.com/docs/apollo-server/"
     },
     {
         name: "GraphQL",
         url: "https://graphql.org/"
+    },
+    {
+        name: "MongoDB",
+        url: "https://docs.mongodb.com/"
+    },
+    {
+        name: "Node.js",
+        url: "https://nodejs.org/"
+    },
+    {
+        name: "JSON Web Token",
+        url: "https://jwt.io/introduction/"
+    },
+    {
+        name: "bcrypt",
+        url: "https://github.com/kelektiv/node.bcrypt.js#readme"
+    },
+    {
+        name: "dotenv",
+        url: "https://github.com/motdotla/dotenv#readme"
     },
     {
         name: "Jquery",
@@ -44,29 +85,33 @@ const skills = [
         url: "https://phaser.io/"
     },
     {
-        name: "Express.js",
-        url: "https://expressjs.com/"
+        name: "SQL",
+        url: "https://developer.mozilla.org/en-US/docs/Glossary/SQL"
     },
     {
-        name: "Node.js",
-        url: "https://nodejs.org/"
+        name: "Sequelize",
+        url: "https://sequelize.org/"
+    },
+
+
+    {
+        name: "C#",
+        url: "https://docs.microsoft.com/en-us/dotnet/csharp/"
     },
     {
-        name: "Git Bash",
-        url: "https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line"
+        name: "Python",
+        url: "https://www.python.org/"
     },
+
+
+
+
+
     {
         name: "Powershell",
         url: "https://docs.microsoft.com/en-us/powershell/"
     },
-    {
-        name: "3rd Party Web APIs",
-        url: "https://developer.mozilla.org/en-US/docs/Web/API"
-    },
-    {
-        name: "Server Side APIs",
-        url: "https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Introduction"
-    },
+
     {
         name: "HTML Handlebars",
         url: "https://handlebarsjs.com/"

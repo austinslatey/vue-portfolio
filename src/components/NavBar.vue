@@ -21,7 +21,9 @@
             hover:text-blue-400
             "
             >
+            
             <img class="w-12" src="../assets/logo3Draft.jpg"/>
+            <h1 class="text-lg font-bold text-gray-800 hover:text-blue-400 px-2">Portfolio of Austin S.</h1>
             </router-link>
 
             <!-- Mobile menu button -->
