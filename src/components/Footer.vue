@@ -5,13 +5,14 @@
         <router-link to="/" class="flex-shrink-0">
           <img src="../assets/logo3Draft.jpg" alt="Logo" class="h-10" />
         </router-link>
-        <div class="ml-4">
-          <div class="flex mt-2">
+        <div class="ml-4 ">
+          <div class="flex mt-2 px-4">
             <a href="https://linktr.ee/austinslatey">
               <img src="@/assets/icons/linktree.svg" alt="Linktree Icon" width="50" height="50">
             </a>
-            <a href="#" class="mr-2"><i class="fab fa-github fa-lg">Github</i></a>
-            <a href="#"><i class="fab fa-mail fa-lg">Email</i></a>
+            <a href="#" class="mr-2 px-4">
+              <img src="@/assets/icons/github.svg" alt="Github Icon" class="github-icon" width="50" height="50">
+            </a>
           </div>
         </div>
       </div>
@@ -37,5 +38,9 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+img.github-icon {
+  color: aqua;
 }
 </style>
