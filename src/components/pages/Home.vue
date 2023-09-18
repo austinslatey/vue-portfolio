@@ -38,7 +38,6 @@ export default {
 
         // create loader and load glb model
         const loader = new GLTFLoader();
-        const model = null;
         loader.load(brain, (gltf) => {
             const model = gltf.scene;
             scene.add(model);
@@ -80,7 +79,7 @@ export default {
             camera.updateProjectionMatrix();
         });
 
-        window.addEventListener('mousemove', this.handleMouseMove);
+        // window.addEventListener('mousemove', this.handleMouseMove);
     },
 
     methods: {
