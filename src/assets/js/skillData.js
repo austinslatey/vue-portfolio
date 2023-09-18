@@ -33,7 +33,7 @@ import powershellIcon from '../icons/powershell.png';
 import regexIcon from '../icons/regex.png';
 import handlebarsIcon from '../icons/handlebars.png';
 import secureIcon from '../icons/secure.png';
-import threeJsIcon from '../icons/threeJs.svg';
+import threeJsIcon from '../icons/threeJS.svg';
 import blenderIcon from '../icons/blender.png';
 import agileIcon from '../icons/agile.png';
 import scrumIcon from '../icons/scrum.png';
@@ -41,7 +41,7 @@ import domIcon from '../icons/dom.png';
 import oopIcon from '../icons/oop.png';
 import ormIcon from '../icons/orm.png';
 
-
+// Skills list
 const skills = [
     {
         name: "Vite",
