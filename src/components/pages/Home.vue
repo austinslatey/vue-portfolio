@@ -1,16 +1,20 @@
 <template>
-    <div class='container' ref="container"></div>
+    <div class='container' ref="container">
+        <Preloader v-if="isLoading"/> 
+    </div>
 </template>
 
 <script type="js">
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import brain from '@/assets/models/machV1.6.glb';
+import Preloader from '@/components/Preloader.vue';
 export default {
     name: 'Home',
 
     data() {
         return {
+            isLoading: true,
             mouseX: 0,
             mouseY: 0
         };
@@ -61,6 +65,9 @@ export default {
                 // update frametime
                 mixer.update(0.006);
                 renderer.render(scene, camera);
+
+                // Mark loading complete once model is loader to un-render preloader
+                this.isLoading = false;
             };
             animate();
         });

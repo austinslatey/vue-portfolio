@@ -5,6 +5,7 @@ import router from "./router";
 import NavBar from "./components/NavBar.vue";
 import Skills from "./components/Skills.vue";
 import Footer from './components/Footer.vue';
+import Preloader from './components/Preloader.vue';
 
 
 
@@ -18,5 +19,6 @@ app.use(router);
 app.component("NavBar", NavBar);
 app.component("Skills", Skills)
 app.component("TheFooter", Footer);
+app.component("Preloader", Preloader);
 
 app.mount("#app");
