@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto">
-    <h1 class="text-3xl font-bold mb-8">Projects</h1>
+    <h1 class="text-3xl font-bold mb-8 text-center text-white">Projects</h1>
     <div class="flex flex-wrap -mx-4 project-cards">
       <div v-for="project in projectsData" :key="project.id" class="w-full md:w-1/2 lg:w-1/3 p-4">
         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
