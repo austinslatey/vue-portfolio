@@ -9,6 +9,13 @@ import brain from '@/assets/models/machV1.6.glb';
 export default {
     name: 'Home',
 
+    data() {
+        return {
+            mouseX: 0,
+            mouseY: 0
+        };
+    },
+
     mounted() {
         //create the scene to render object
         const scene = new THREE.Scene();
@@ -21,7 +28,7 @@ export default {
             1000
         );
         camera.position.z = 25;
-        camera.position.x = 2.0;
+        camera.position.x = -1.0;
         camera.rotation.set(0.0, -0.01, 0.1);
 
         // create the renderer
@@ -31,6 +38,7 @@ export default {
 
         // create loader and load glb model
         const loader = new GLTFLoader();
+        const model = null;
         loader.load(brain, (gltf) => {
             const model = gltf.scene;
             scene.add(model);
@@ -50,7 +58,7 @@ export default {
                 // model.rotation.x -= 0.002;
                 model.rotation.y += 0.003;
                 model.rotation.z -= 0.002;
-                
+
                 // update frametime
                 mixer.update(0.006);
                 renderer.render(scene, camera);
@@ -71,6 +79,27 @@ export default {
             camera.aspect = width / height;
             camera.updateProjectionMatrix();
         });
+
+        window.addEventListener('mousemove', this.handleMouseMove);
     },
+
+    methods: {
+        handleMouseMove(event) {
+            const { clientX, clientY } = event;
+
+            // Calculate the rotation angles based on the mouse position
+            const rotationY = (clientX / window.innerWidth) * Math.PI * 2;
+            const rotationX = (clientY / window.innerHeight) * Math.PI * 2;
+
+            // Update the rotation of the model
+            model.rotation.x = rotationX;
+            model.rotation.y = rotationY;
+        }
+    },
+
+    beforeUnmount() {
+        // clean up event listeners
+        window.removeEventListener('mousemove', this.handleMouseMove);
+    }
 };
 </script>

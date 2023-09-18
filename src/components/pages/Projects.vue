@@ -1,8 +1,8 @@
 <template>
   <div class="container mx-auto">
     <h1 class="text-3xl font-bold mb-8">Projects</h1>
-    <div class="flex flex-wrap -mx-4">
-      <div v-for="project in projectsData" :key="project.id" class="w-full md:w-1/2 lg:w-1/3 px-4 mb-20">
+    <div class="flex flex-wrap -mx-4 project-cards">
+      <div v-for="project in projectsData" :key="project.id" class="w-full md:w-1/2 lg:w-1/3 p-4">
         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
           <a :href="project.link" target="_blank">
             <img :src="project.image" alt="project" class="h-64 w-full object-cover" />
@@ -36,5 +36,9 @@ export default {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.project-cards {
+  margin-bottom: 5rem;
 }
 </style>
