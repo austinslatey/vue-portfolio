@@ -1,7 +1,37 @@
-# Vue 3 + Vite
+# Austin Slater's Portfolio
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Welcome to my portfolio! I'm Austin Slater, a passionate Full-Stack Web Developer based in Minnesota, United States. This repository serves as a showcase of my projects and skills.
 
-## Recommended IDE Setup
+## About Me
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- 🌐 Full-Stack Web Developer with a focus on both client-side and server-side development.
+- 💡 Constantly learning and exploring new technologies to stay up-to-date with the latest trends.
+- 🎓 Graduated from the University of Minnesota's Full-Stack Web Development Bootcamp.
+- 🎣 When I'm not coding, you can find me fishing in the beautiful 'Land of 10,000 Lakes.'
+
+## Projects
+
+You've made it this far, here are some fun browser mini-games:
+
+- [Bug Invaders](https://austinslatey.github.io/bug-invaders/): My personal Space Invaders.
+- [Cube Matcher](https://austinslatey.github.io/Cube-Matcher/): Match the cubes to score points!
+- [Winter Wonderland](https://austinslatey.github.io/winter-wonderland/): Travel through the tundra with Codey.
+
+## Skills
+
+I'm proficient in a variety of technologies, including:
+
+- HTML, CSS, JavaScript
+- React.js, Node.js, Express.js
+- SQL, MongoDB
+- Git, GitHub
+- and more!
+
+## Get in Touch
+
+- Connect on [LinkedIn](https://www.linkedin.com/in/austin-slater-1141b8225/)
+
+
+Feel free to connect with me on LinkedIn. I'm always open to new opportunities and collaborations.
+
+Thanks for visiting my portfolio! Explore my projects and skills to learn more about what I do.
