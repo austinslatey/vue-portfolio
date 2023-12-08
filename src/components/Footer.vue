@@ -38,7 +38,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #333; /* Change this to your desired background color */
+  background-color: #333333; /* Change this to your desired background color */
   color: #fff; /* Change this to your desired text color */
   padding: 1rem; /* Adjust the padding as needed */
   display: flex;

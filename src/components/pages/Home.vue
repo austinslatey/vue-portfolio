@@ -1,111 +1,116 @@
 <template>
-    <div class='container' ref="container">
-        <Preloader v-if="isLoading"/> 
-    </div>
+  <div class='container' ref="container">
+      <Preloader v-if="isLoading"/> 
+  </div>
 </template>
 
-<script type="js">
+<script>
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import brain from '@/assets/models/machV1.6.glb';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Preloader from '@/components/Preloader.vue';
+import brain from '@/assets/models/machV1.6.glb'
+
 export default {
-    name: 'Home',
+  name: 'Home',
 
-    data() {
-        return {
-            isLoading: true,
-            mouseX: 0,
-            mouseY: 0
-        };
-    },
+  data() {
+      return {
+          isLoading: true,
+          mouseX: 0,
+          mouseY: 0
+      };
+  },
 
-    mounted() {
-        //create the scene to render object
-        const scene = new THREE.Scene();
+  mounted() {
+      // Create the scene
+      const scene = new THREE.Scene();
 
-        // Create the camera
-        const camera = new THREE.PerspectiveCamera(
-            35,
-            window.innerWidth / window.innerHeight,
-            0.1,
-            1000
-        );
-        camera.position.z = 25;
-        camera.position.x = -1.0;
-        camera.rotation.set(0.0, -0.01, 0.1);
+      // Create the camera
+      const camera = new THREE.PerspectiveCamera(
+          45,
+          window.innerWidth / window.innerHeight,
+          1,
+          10000
+      );
+      camera.position.set(0, 20, 100);
 
-        // create the renderer
-        const renderer = new THREE.WebGL1Renderer({ antialias: true });
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        this.$refs.container.appendChild(renderer.domElement);
+      // Create the renderer
+      // Create the renderer
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setClearColor(0x333333); // Set the background color to black
+this.$refs.container.appendChild(renderer.domElement);
 
-        // create loader and load glb model
-        const loader = new GLTFLoader();
-        loader.load(brain, (gltf) => {
-            const model = gltf.scene;
-            scene.add(model);
+      // Create loader and load glb model
+      const loader = new GLTFLoader();
+      loader.load(brain, (gltf) => {
+          const model = gltf.scene;
+          scene.add(model);
 
-            // animation properties
-            const mixer = new THREE.AnimationMixer(gltf.scene);
-            const clips = gltf.animations;
-            const clip = clips[0];
-            const action = mixer.clipAction(clip);
-            action.play();
+          // Animation properties
+          const mixer = new THREE.AnimationMixer(gltf.scene);
+          const clips = gltf.animations;
+          const clip = clips[0];
+          const action = mixer.clipAction(clip);
+          action.play();
 
-            // animate the scene
-            const animate = () => {
-                requestAnimationFrame(animate);
+          // Create OrbitControls
+          const controls = new OrbitControls(camera, renderer.domElement);
+          camera.position.set(20, 20, 0);
+          controls.update();
 
-                // Set the rotation of the model
-                // model.rotation.x -= 0.002;
-                model.rotation.y += 0.003;
-                model.rotation.z -= 0.002;
+          // Animate the scene
+          const animate = () => {
+              requestAnimationFrame(animate);
 
-                // update frametime
-                mixer.update(0.006);
-                renderer.render(scene, camera);
+              // Set the rotation of the model
+              // model.rotation.x -= 0.002;
+              model.rotation.y += 0.003;
+              model.rotation.z -= 0.002;
 
-                // Mark loading complete once model is loader to un-render preloader
-                this.isLoading = false;
-            };
-            animate();
-        });
+              // Update frametime
+              mixer.update(0.006);
+              controls.update();
+              renderer.render(scene, camera);
 
-        // add lighting to the scene
-        const light = new THREE.DirectionalLight(0xffffff, 1);
-        light.position.set(0, 1, 0);
-        scene.add(light);
+              // Mark loading complete once model is loaded to un-render preloader
+              this.isLoading = false;
+          };
+          animate();
+      });
 
-        // handle resizing of window
-        window.addEventListener('resize', () => {
-            const width = window.innerWidth;
-            const height = window.innerHeight;
-            renderer.setSize(width, height);
-            camera.aspect = width / height;
-            camera.updateProjectionMatrix();
-        });
+      // Add lighting to the scene
+      const light = new THREE.DirectionalLight(0xffffff, 3);
+      light.position.set(1, 1, 0);
+      scene.add(light);
 
-        // window.addEventListener('mousemove', this.handleMouseMove);
-    },
+      // Handle resizing of window
+      window.addEventListener('resize', () => {
+          const width = window.innerWidth;
+          const height = window.innerHeight;
+          renderer.setSize(width, height);
+          camera.aspect = width / height;
+          camera.updateProjectionMatrix();
+      });
 
-    methods: {
-        handleMouseMove(event) {
-            const { clientX, clientY } = event;
+      // Handle mouse movement
+      window.addEventListener('mousemove', (event) => {
+          const { clientX, clientY } = event;
 
-            // Calculate the rotation angles based on the mouse position
-            const rotationY = (clientX / window.innerWidth) * Math.PI * 2;
-            const rotationX = (clientY / window.innerHeight) * Math.PI * 2;
+          // Calculate the rotation angles based on the mouse position
+          const rotationY = (clientX / window.innerWidth) * Math.PI * 2;
+          const rotationX = (clientY / window.innerHeight) * Math.PI * 2;
 
-            // Update the rotation of the model
-            model.rotation.x = rotationX;
-            model.rotation.y = rotationY;
-        }
-    },
+          // Update the rotation of the model
+          model.rotation.x = rotationX;
+          model.rotation.y = rotationY;
+      });
+  },
 
-    beforeUnmount() {
-        // clean up event listeners
-        window.removeEventListener('mousemove', this.handleMouseMove);
-    }
+  beforeUnmount() {
+      // Clean up event listeners
+      window.removeEventListener('mousemove', this.handleMouseMove);
+  }
 };
 </script>
