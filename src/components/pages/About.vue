@@ -1,6 +1,6 @@
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-3 max-h-screen mr-2 mb-5">
-    <section class="col-span-2 max-h-screen overflow-y-auto about-section bg-gray-800">
+  <div class="md:grid-cols-1 max-h-screen mb-2">
+    <section class="col-span-1 max-h-screen overflow-y-auto about-section bg-gray-800">
       <!-- <img :src="selfie" alt="About me" /> -->
       <div class="card-text m-2 space-y-4 text-center text-custom-white text-3xl p-4 about-text">
         <p>
@@ -38,7 +38,7 @@
         </p>
       </div>
     </section>
-    <div class="md:col-span-1 md:h-auto max-h-screen overflow-y-auto mb-5">
+    <div class="md:col-span-2 md:h-auto max-h-screen overflow-y-auto mb-5">
       <skills />
     </div>
   </div>
