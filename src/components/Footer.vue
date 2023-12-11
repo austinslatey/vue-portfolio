@@ -3,7 +3,7 @@
     <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between">
       <div class="flex items-center">
         <router-link to="/" class="flex-shrink-0 mt-2 ml-14">
-          <img src="../assets/logo3Draft.jpg" alt="Logo" class="h-10" />
+          <img src="@/assets/imgs/homeImg/logo3Draft.jpg" alt="Logo" class="h-10" />
         </router-link>
         <div class="ml-4 ">
           <div class="flex mt-2 px-4">
@@ -45,6 +45,7 @@ footer {
   justify-content: space-between; /* Adjust the alignment as needed */
   align-items: center; /* Adjust the alignment as needed */
   height: 5rem;
+  margin: 0;
 }
 
 img.github-icon {

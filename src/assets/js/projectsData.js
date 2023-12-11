@@ -1,12 +1,12 @@
-import bugInvaders from '../projectImgs/bugInvaders.png';
-import winterWonderland from '../projectImgs/winterWonderland.png';
-import cubeMatcher from '../projectImgs/cubeMatcher.png';
-import concertScout from '../projectImgs/concertScout.png';
-import travelBug from '../projectImgs/travelBug.png';
-import recipEase from '../projectImgs/recipEase.png';
-import jamming from '../projectImgs/jamming.png';
-import catWorx from '../projectImgs/catWorx.png';
-import wealthyMind from '../projectImgs/wealthy-mind.png';
+import bugInvaders from '../imgs/projectImgs/bugInvaders.png';
+import winterWonderland from '../imgs/projectImgs/winterWonderland.png';
+import cubeMatcher from '../imgs/projectImgs/cubeMatcher.png';
+import concertScout from '../imgs/projectImgs/concertScout.png';
+import travelBug from '../imgs/projectImgs/travelBug.png';
+import recipEase from '../imgs/projectImgs/recipEase.png';
+import jamming from '../imgs/projectImgs/jamming.png';
+import catWorx from '../imgs/projectImgs/catWorx.png';
+import wealthyMind from '../imgs/projectImgs/wealthy-mind.png';
 
 
 

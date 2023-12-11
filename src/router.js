@@ -3,6 +3,7 @@ import Home from "./components/pages/Home.vue";
 import About from "./components/pages/About.vue";
 import Projects from "./components/pages/Projects.vue";
 import Certificates from "./components/pages/Certificates.vue";
+import OtherHome from "./components/pages/OtherHome.vue";
 import NotFound from "./components/pages/NotFound.vue";
 
 const routes = [
@@ -25,6 +26,11 @@ const routes = [
     path: "/certificates",
     name: "certificates",
     component: Certificates,
+  },
+  {
+    path: "/otherHome",
+    name: "otherHome",
+    component: OtherHome, 
   },
   {
     path: "/:catchAll(.*)",

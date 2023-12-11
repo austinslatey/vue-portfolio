@@ -7,7 +7,7 @@ import Skills from "./components/Skills.vue";
 import Footer from './components/Footer.vue';
 import Preloader from './components/Preloader.vue';
 import Modal from './components/Modal.vue';
-import Sphere from './components/Sphere.vue';
+import Brain from './components/Brain.vue';
 
 
 
@@ -23,6 +23,6 @@ app.component("Skills", Skills)
 app.component("TheFooter", Footer);
 app.component("Preloader", Preloader);
 app.component("Modal", Modal);
-app.component("Sphere", Sphere);
+app.component("Brain", Brain);
 
 app.mount("#app");

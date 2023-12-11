@@ -17,7 +17,7 @@
             hover:text-blue-400
             ">
 
-            <img class="w-12" src="../assets/logo3Draft.jpg" />
+            <img class="w-12" src="../assets/imgs/homeImg/logo3Draft.jpg" />
             <h1 class="text-lg font-bold text-gray-800 hover:text-blue-400 px-2">Portfolio of Austin S.</h1>
           </router-link>
 
@@ -55,6 +55,8 @@
               to="/Certificates">Certificates</router-link></li>
           <li class="text-sm font-bold text-gray-800 hover:text-blue-400"><router-link
               to="/Projects">Projects</router-link></li>
+          <!-- <li class="text-sm font-bold text-gray-800 hover:text-blue-400"><router-link
+              to="/OtherHome">Other Home</router-link></li> -->
         </ul>
       </nav>
     </div>

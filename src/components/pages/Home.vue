@@ -7,18 +7,20 @@
 
     <!-- Render the 3D model without any condition -->
     <div>
-      <Sphere v-if="show3DModel" />
+      <Brain v-if="show3DModel" />
     </div>
   </div>
 </template>
 
 <script>
-import Sphere from '../Sphere.vue';
+import Brain from '../Brain.vue';
+import Modal from '../Modal.vue';
 
 export default {
   name: 'Home',
   components: {
-    Sphere,
+    Brain,
+    Modal
   },
   data() {
     return {

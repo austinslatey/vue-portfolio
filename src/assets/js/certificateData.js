@@ -1,12 +1,12 @@
-import UofM from '../certificateImg/UofM.png';
-import reactJs from '../certificateImg/reactJs.png';
-import phaserJs from '../certificateImg/phaserJs.png';
-import javaScript from '../certificateImg/javaScript.png';
-import html from '../certificateImg/html.png';
-import command from '../certificateImg/command.png';
-import css from '../certificateImg/css.png';
-import css2 from '../certificateImg/cc2.png';
-import harvard from '../certificateImg/harvard.png';
+import UofM from '../imgs/certificateImg/UofM.png';
+import reactJs from '../imgs/certificateImg/reactJs.png';
+import phaserJs from '../imgs/certificateImg/phaserJs.png';
+import javaScript from '../imgs/certificateImg/javaScript.png';
+import html from '../imgs/certificateImg/html.png';
+import command from '../imgs/certificateImg/command.png';
+import css from '../imgs/certificateImg/css.png';
+import css2 from '../imgs/certificateImg/cc2.png';
+import harvard from '../imgs/certificateImg/harvard.png';
 
 // image data to render on certificates page
 
