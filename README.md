@@ -37,3 +37,7 @@ I'm proficient in a variety of technologies, including:
 Feel free to connect with me on LinkedIn. I'm always open to new opportunities and collaborations.
 
 Thanks for visiting my portfolio! Explore my projects and skills to learn more about what I do.
+
+
+## Sources
+Resume & mail icon by Icons8

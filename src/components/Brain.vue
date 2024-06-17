@@ -9,10 +9,10 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { TrackballControls } from 'three/examples/jsm/controls/TrackballControls';
 import Preloader from '@/components/Preloader.vue';
-import brain from '@/assets/models/machV1.6.glb'
+import brain from '@/assets/models/machV1.6.glb';
 
 export default {
-  name: 'Brain',
+  name: 'brain',
 
   data() {
     return {
@@ -69,9 +69,9 @@ export default {
         requestAnimationFrame(animate);
 
         // Set the rotation of the model
-        // model.rotation.x -= 0.002;
-        model.rotation.y += 0.003;
-        model.rotation.z -= 0.002;
+        model.rotation.x -= 0.002;
+        //  model.rotation.y += 0.003;
+        //  model.rotation.z -= 0.002;
 
         // Update frametime
         mixer.update(0.006);
@@ -84,9 +84,11 @@ export default {
       animate();
     });
 
+    
+
     // Add lighting to the scene
-    const light = new THREE.DirectionalLight(0xffffff, 3);
-    light.position.set(1, 1, 0);
+    const light = new THREE.DirectionalLight(0xffffff, 3, 1);
+    
     scene.add(light);
 
     // Handle resizing of window
