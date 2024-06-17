@@ -25,7 +25,7 @@
           problems.
         </p>
         <p>
-          In my leisure time, one might discover me fishing in the region referred to as the 'Land of 10,000 Lakes.
+          In my leisure time, one might discover me fishing in the region referred to as the 'Land of 10,000 Lakes'.
         </p>
         <p>
           Feel welcome to connect with me on LinkedIn using the icon provided below. If you wish to contact me directly,
